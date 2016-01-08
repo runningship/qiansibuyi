@@ -19,16 +19,10 @@ CommonDaoService dao = SimpDaoTool.getGlobalCommonDaoService();
 ProductItem item = dao.get(ProductItem.class, Integer.valueOf(id));
 request.setAttribute("pi" , item);
 String code = ""+item.id;
-//String url = "http://192.168.1.222:7080/public/itemView.jsp?qrCode="+ item.qrCode;
-//String url = "http://kcloud.iflytek.com/p/v/"+item.qrCode; 
-String url = "http://192.168.1.222:7080/p/"+code; 
+String url = "http://192.168.1.222:6080/qsby/admin/product/view.jsp?id="+id;
+//String url = "http://192.168.1.222:7080/p/"+code; 
 
-//File stream = QRCode.from(url).to(ImageType.PNG).withSize(250, 250).file();
-//BufferedImage bufImg = ImageIO.read(stream);
-//response.setContentType("image/PNG");
 response.setContentType("text/html");
-//OutputStream os = response.getOutputStream();
-//ImageIO.write(bufImg, "jpg", os);
 String realLogoPath = request.getServletContext().getRealPath("images/logo.png");
 String qrCodeDir = ConfigCache.get("qrcode_image_path", "C:\\inetpub\\wwwroot\\qrcode_image_path");
 String destPath = qrCodeDir+"\\"+item.productId+"\\"+code+".png";

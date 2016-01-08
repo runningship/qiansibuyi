@@ -8,28 +8,22 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Client {
+public class ScanRecord {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	public Integer id;
 	
-	public String name;
+	//微信openid
+	public String buyerId;
 	
-	//可能是微信号
-	public String openid;
+	public Integer productId;
 	
-	public String pwd;
+	//ProductItem Id
+	public Integer piid;
 	
-	public String tel;
+	//返利
+	public Integer reward;
 	
-	public Date addtime;
-	
-	public Date lasttime;
-	
-	public String email;
-	
-	public Date birth;
-	
-	public int jifen;
+	public Date rewardTime;
 }

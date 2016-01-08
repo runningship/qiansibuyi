@@ -22,7 +22,8 @@ public class ProductItem {
 	
 	public String size;
 	
-	public Integer buyerId;
+	//weixin openid
+	public String buyerId;
 	
 	public float dealPrice;
 	

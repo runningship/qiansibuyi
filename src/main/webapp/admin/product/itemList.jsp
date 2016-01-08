@@ -113,6 +113,7 @@ function doSearch(){
                 <td >$[zhifu]</td>
                 <td>
                 	<a href="genQR.jsp?id=$[id]"  target="_blank">二维码</a>
+                	<a href="view.jsp?id=$[id]"  target="_blank">预览</a>
                     <a href="#" onclick="delPost($[id])">删除</a>
                 </td>
             </tr>

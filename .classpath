@@ -22,5 +22,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/fluent-hc-4.3.6.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/httpclient-4.3.6.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/httpclient-cache-4.3.6.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/httpcore-4.3.3.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/httpmime-4.3.6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
